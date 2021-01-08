@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KBuMNGoljOMPzm8GszXg5SIzov16H84hJ74StMB5kmm0ETQ/eu6LZgDcQsGQkAAS9GOOvwcv8vpkQESbXsdSkA==",
+  "dgSpecHash": "9oGqVFabZ17kKM4c0QJmJ1eFmWA8XkTw8ndcEpFsb7E4uD8Fk2G5Fcc+J5pqKnUqRWmROVd93dbocTps5n90Xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\khhsx\\source\\repos\\vector3tools\\vector3tools.csproj",
+  "projectFilePath": "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\vector3tools.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khhsx\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\khhsx\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
