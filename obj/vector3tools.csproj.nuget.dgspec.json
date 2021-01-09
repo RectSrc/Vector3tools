@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\vector3tools.csproj": {}
+    "C:\\Users\\khhsx\\source\\repos\\vector3tools\\vector3tools.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\vector3tools.csproj": {
+    "C:\\Users\\khhsx\\source\\repos\\vector3tools\\vector3tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\vector3tools.csproj",
+        "projectUniqueName": "C:\\Users\\khhsx\\source\\repos\\vector3tools\\vector3tools.csproj",
         "projectName": "vector3tools",
-        "projectPath": "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\vector3tools.csproj",
+        "projectPath": "C:\\Users\\khhsx\\source\\repos\\vector3tools\\vector3tools.csproj",
         "packagesPath": "C:\\Users\\khhsx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khhsx\\Source\\Repos\\RectSrc\\Vector3tools\\obj\\",
+        "outputPath": "C:\\Users\\khhsx\\source\\repos\\vector3tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\khhsx\\AppData\\Roaming\\NuGet\\NuGet.Config",
