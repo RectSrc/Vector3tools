@@ -31,8 +31,8 @@ namespace v3t
         public static Vector3 Forward(Vector3 dir)
         {
             Vector3 rot = new Vector3();
-            rot.y = Convert.ToSingle(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x));
-            rot.x = Convert.ToSingle(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x));
+            rot.y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x), 10));
+            rot.x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x), 10));
             return rot;
         }
 
