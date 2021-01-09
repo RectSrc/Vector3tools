@@ -6,7 +6,7 @@ namespace v3t
     public static class v3t
     {
 
-        public class v3t
+        public class Vector3
         {
 
             public float x;
