@@ -28,9 +28,9 @@ namespace v3t
 
         }
 
-        public static float[] Forward(float[] dir)
+        public static Vector3 Forward(Vector3 dir)
         {
-            return new float[] { dir[0] * 1, dir[1] * 0, dir[2] * 1 };
+            return new float[] { dir.x * 1, dir.y * 0, dir.z * 1 };
         }
 
     }
