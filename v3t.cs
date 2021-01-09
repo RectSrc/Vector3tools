@@ -30,7 +30,10 @@ namespace v3t
 
         public static Vector3 Forward(Vector3 dir)
         {
-            return new float[] { dir.x * 1, dir.y * 0, dir.z * 1 };
+            Vector3 rot = new Vector3();
+            rot.y = Convert.ToSingle(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x));
+            rot.x = Convert.ToSingle(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x));
+            return rot;
         }
 
     }
