@@ -31,16 +31,16 @@ namespace v3t
         public static Vector3 Forward(Vector3 dir)
         {
             Vector3 rot = new Vector3();
-            rot.y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x), 10));
-            rot.x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * rot.x), 10));
+            rot.y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
+            rot.x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
             return rot;
         }
 
         public static void Main(string[] args)
         {
-            Console.WriteLine(Forward(new Vector3(0, 0, 0)).y);
-            Console.WriteLine(Forward(new Vector3(10, 0, 0)).y);
-            Console.WriteLine(Forward(new Vector3(90, 0, 0)).y);
+
+            Forward(new Vector3(90, 0, 0));
+
         }
 
     }
