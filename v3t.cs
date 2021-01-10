@@ -36,6 +36,13 @@ namespace v3t
             return rot;
         }
 
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(Forward(new Vector3(0, 0, 0)).y);
+            Console.WriteLine(Forward(new Vector3(10, 0, 0)).y);
+            Console.WriteLine(Forward(new Vector3(90, 0, 0)).y);
+        }
+
     }
 
 }
