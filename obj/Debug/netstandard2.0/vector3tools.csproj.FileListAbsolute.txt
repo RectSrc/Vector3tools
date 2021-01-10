@@ -7,3 +7,12 @@ C:\Users\khhsx\Source\Repos\RectSrc\Vector3tools\bin\Debug\netstandard2.0\vector
 C:\Users\khhsx\Source\Repos\RectSrc\Vector3tools\bin\Debug\netstandard2.0\vector3tools.pdb
 C:\Users\khhsx\Source\Repos\RectSrc\Vector3tools\obj\Debug\netstandard2.0\vector3tools.dll
 C:\Users\khhsx\Source\Repos\RectSrc\Vector3tools\obj\Debug\netstandard2.0\vector3tools.pdb
+C:\Users\khhsx\source\repos\vector3tools\bin\Debug\netstandard2.0\vector3tools.deps.json
+C:\Users\khhsx\source\repos\vector3tools\bin\Debug\netstandard2.0\vector3tools.dll
+C:\Users\khhsx\source\repos\vector3tools\bin\Debug\netstandard2.0\vector3tools.pdb
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.csprojAssemblyReference.cache
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.AssemblyInfoInputs.cache
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.AssemblyInfo.cs
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.csproj.CoreCompileInputs.cache
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.dll
+C:\Users\khhsx\source\repos\vector3tools\obj\Debug\netstandard2.0\vector3tools.pdb
