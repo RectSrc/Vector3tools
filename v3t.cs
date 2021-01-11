@@ -32,14 +32,24 @@ namespace v3t
         {
             Vector3 rot = new Vector3();
             rot.y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
+            if (rot.y > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10)) > 0)
+                rot.y *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
+            else
+                rot.y += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
             rot.x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
+            if (rot.x > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10)) > 0)
+                rot.x *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+            else
+                rot.x += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+            rot.z = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+            
             return rot;
         }
 
         public static void Main(string[] args)
         {
 
-            Forward(new Vector3(90, 0, 0));
+            Console.WriteLine(Forward(new Vector3(90, 0, 0)).z);
 
         }
 
