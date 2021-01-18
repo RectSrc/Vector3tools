@@ -3,7 +3,7 @@ using System.Numerics;
 using System.Reflection;
 namespace v3t
 {
-    public static class v3t
+    public static class vector3tools
     {
 
         public class Vector3
@@ -28,36 +28,28 @@ namespace v3t
 
         }
 
-        public static Vector3 Forward(Vector3 dir)
+        public static object Forward(object _dir)
         {
-            Vector3 rot = new Vector3();
-            rot.y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
-            if (rot.y > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10)) > 0)
-                rot.y *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
+            Vector3 dir = (Vector3)_dir;
+            float y = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
+            if (y > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10)) > 0)
+                y *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
             else
-                rot.y += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
-            rot.x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
-            if (rot.x > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10)) > 0)
-                rot.x *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+                y += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
+            float x = Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.x), 10));
+            if (x > 0 && Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10)) > 0)
+                x *= Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
             else
-                rot.x += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
-            rot.z = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
-            if (rot.z > 0 && Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10)) > 0)
-                rot.z *= Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
+                x += Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+            float z = Convert.ToSingle(Math.Round(Math.Sin(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.y), 10));
+            if (z > 0 && Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10)) > 0)
+                z *= Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
             else
-                rot.z += Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
+                z += Convert.ToSingle(Math.Round(Math.Cos(((Convert.ToSingle(Math.PI) * 2f) / 360f) * dir.z), 10));
 
 
-            return rot;
+            return new Vector3(x, y, z);
         }
-
-        public static void Main(string[] args)
-        {
-
-            Console.WriteLine(Forward(new Vector3(0, 90, 90)).z);
-
-        }
-
     }
 
 }
